@@ -267,9 +267,12 @@
     .services { padding: var(--section-pad); background: var(--cream); }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 56px;
+    }
+    @media (max-width: 700px) {
+      .services-grid { grid-template-columns: 1fr; }
     }
     .service-card {
       background: var(--white);
@@ -490,12 +493,12 @@
       </div>
       <div class="hero-image-panel">
         <div class="hero-img-main">
-          <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/490134840_2758352641219089_5558626994597076761_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=b895b5&_nc_ohc=lfSK3zBKnxAQ7kNvwHsW-0X&_nc_oc=AdrZNWFNV7IkDJ-FOcLTubk9aOo2-47Xzx1GfHFzkfw0xqhy2GIDOFJYy7K7DaVlDXg&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=1sEX26IG3BZ-pOMQrMsfbA&_nc_ss=8&oh=00_Afz9waoC9dVG6bZ5r7Ef4lBZ16EVng01HoEOhlnrlNxWAA&oe=69C0C4AC" />
+          <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/490134840_2758352641219089_5558626994597076761_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=b895b5&_nc_ohc=lfSK3zBKnxAQ7kNvwHsW-0X&_nc_oc=AdrZNWFNV7IkDJ-FOcLTubk9aOo2-47Xzx1GfHFzkfw0xqhy2GIDOFJYy7K7DaVlDXg&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=HQ6_gayNrBk0AMFfh_QP4A&_nc_ss=8&oh=00_AfxzkrRR8qF6EAtkd7IjHlk4B5XujPMmGraXFIxMXBJ6MQ&oe=69C0FCEC" alt="Nail art by Legacy Nails Spa Phoenix" />
         </div>
         <div class="hero-img-badge">
           <div class="open-now"><div class="open-dot"></div> Open Now</div>
           <div class="badge-text">Walk-ins Welcome</div>
-          <div class="badge-sub">Mon–Sat 9am–7pm · Sun 10am–6pm</div>
+          <div class="badge-sub">Mon–Fri 9:30am–7pm · Sat 8:30am–6pm · Sun 11am–5pm</div>
         </div>
       </div>
     </div>
@@ -542,7 +545,7 @@
           </ul>
         </div>
         <div class="trust-image">
-          <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/494400333_2780446582343028_5878271103877733817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=WHYkifwdJy4Q7kNvwE0T9Np&_nc_oc=AdrkTDW_n0Xy3ifSSCYlf_RN0vnNoxdXC_bWToJ0Bg46xz5lqwg0T1EI03fRbF5JNK4&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=zzhZQtV_BxzEsQYExjpC7w&_nc_ss=8&oh=00_AfyNDgzx1rnAS_7Vt6c3Wtdkv91CWfZQQXwkdW7A12olEA&oe=69C0C62E" />
+          <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/494400333_2780446582343028_5878271103877733817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=WHYkifwdJy4Q7kNvwE0T9Np&_nc_oc=AdrkTDW_n0Xy3ifSSCYlf_RN0vnNoxdXC_bWToJ0Bg46xz5lqwg0T1EI03fRbF5JNK4&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=n8DWHo1-Ldcct8GjO-gqkQ&_nc_ss=8&oh=00_AfynDc58aMC1rOrCZSMd5ikdRrRlo9fNGT4KCd9eNvyxCA&oe=69C0FE6E" />
         </div>
       </div>
     </div>
@@ -560,58 +563,100 @@
       </div>
 
       <div class="services-grid">
+
+        <!-- MANICURE -->
         <div class="service-card">
           <div class="service-card-header">
-            <span class="label">Most Requested</span>
+            <span class="label">Natural Nail Care</span>
             <h3>Manicure</h3>
-            <span class="service-price">From $25</span>
+            <span class="service-price">From $28</span>
           </div>
           <ul class="service-items">
-            <li class="service-item"><span class="service-item-name">Classic Manicure</span><span class="service-item-price">$25</span></li>
-            <li class="service-item"><span class="service-item-name">Gel Manicure <span class="popular-badge">Popular</span></span><span class="service-item-price">$40</span></li>
-            <li class="service-item"><span class="service-item-name">Hard Gel / Builder Gel</span><span class="service-item-price">$55</span></li>
-            <li class="service-item"><span class="service-item-name">Acrylic Full Set</span><span class="service-item-price">$48</span></li>
-            <li class="service-item"><span class="service-item-name">Acrylic Fill</span><span class="service-item-price">$30</span></li>
-            <li class="service-item"><span class="service-item-name">Nail Art (per nail)</span><span class="service-item-price">From $3</span></li>
+            <li class="service-item"><span class="service-item-name">Manicure (regular polish)</span><span class="service-item-price">$28</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Manicure <span class="popular-badge">Popular</span></span><span class="service-item-price">$38</span></li>
+            <li class="service-item"><span class="service-item-name">Cat Eye Gel Manicure</span><span class="service-item-price">$48</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Manicure French Tips</span><span class="service-item-price">$48</span></li>
+            <li class="service-item"><span class="service-item-name">SNS Dipping</span><span class="service-item-price">$50</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Polish Change (no soak off)</span><span class="service-item-price">$25</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Polish Change (+ take off)</span><span class="service-item-price">$30</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Take Off (no service)</span><span class="service-item-price">$15</span></li>
           </ul>
         </div>
 
+        <!-- NAIL EXTENSIONS -->
         <div class="service-card">
           <div class="service-card-header">
-            <span class="label">Self-Care Essential</span>
+            <span class="label">Nail Extensions</span>
+            <h3>Acrylic &amp; SNS</h3>
+            <span class="service-price">From $55</span>
+          </div>
+          <ul class="service-items">
+            <li class="service-item"><span class="service-item-name">Acrylic Full Set (gel or reg polish) <span class="popular-badge">Popular</span></span><span class="service-item-price">$60</span></li>
+            <li class="service-item"><span class="service-item-name">Acrylic Fill-in</span><span class="service-item-price">$50</span></li>
+            <li class="service-item"><span class="service-item-name">Powder Color Full Set</span><span class="service-item-price">$60</span></li>
+            <li class="service-item"><span class="service-item-name">Powder Color Fill-in</span><span class="service-item-price">$50</span></li>
+            <li class="service-item"><span class="service-item-name">Pink &amp; White / Solar Nails Full Set</span><span class="service-item-price">$70</span></li>
+            <li class="service-item"><span class="service-item-name">Pink &amp; White Fill-in</span><span class="service-item-price">$55</span></li>
+            <li class="service-item"><span class="service-item-name">Ombre Full Set</span><span class="service-item-price">$70</span></li>
+            <li class="service-item"><span class="service-item-name">Ombre Fill-in</span><span class="service-item-price">$55</span></li>
+            <li class="service-item"><span class="service-item-name">SNS Full Set</span><span class="service-item-price">$55</span></li>
+            <li class="service-item"><span class="service-item-name">Acrylic Take Off (no service)</span><span class="service-item-price">$20</span></li>
+          </ul>
+        </div>
+
+        <!-- PEDICURE -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <span class="label">Self-Care</span>
             <h3>Pedicure</h3>
-            <span class="service-price">From $35</span>
+            <span class="service-price">From $30</span>
           </div>
           <ul class="service-items">
-            <li class="service-item"><span class="service-item-name">Classic Pedicure</span><span class="service-item-price">$35</span></li>
-            <li class="service-item"><span class="service-item-name">Deluxe Spa Pedicure <span class="popular-badge">Popular</span></span><span class="service-item-price">$55</span></li>
-            <li class="service-item"><span class="service-item-name">Gel Pedicure</span><span class="service-item-price">$50</span></li>
-            <li class="service-item"><span class="service-item-name">Paraffin Add-on</span><span class="service-item-price">+$12</span></li>
-            <li class="service-item"><span class="service-item-name">Hot Stone Add-on</span><span class="service-item-price">+$10</span></li>
-            <li class="service-item"><span class="service-item-name">Callus Treatment</span><span class="service-item-price">+$15</span></li>
+            <li class="service-item"><span class="service-item-name">Express Pedicure</span><span class="service-item-price">$30</span></li>
+            <li class="service-item"><span class="service-item-name">Spa Pedicure <span class="popular-badge">Popular</span></span><span class="service-item-price">$40</span></li>
+            <li class="service-item"><span class="service-item-name">Special Spa Pedicure</span><span class="service-item-price">$55</span></li>
+            <li class="service-item"><span class="service-item-name">Deluxe Spa Pedicure</span><span class="service-item-price">$70</span></li>
+            <li class="service-item"><span class="service-item-name">Gel Polish over Pedicure</span><span class="service-item-price">+$15</span></li>
+            <li class="service-item"><span class="service-item-name">Gel French Tips over Pedicure</span><span class="service-item-price">+$20</span></li>
+            <li class="service-item"><span class="service-item-name">Callus Removal</span><span class="service-item-price">+$10</span></li>
+            <li class="service-item"><span class="service-item-name">Paraffin</span><span class="service-item-price">+$15</span></li>
+            <li class="service-item"><span class="service-item-name">Chrome Gel over Pedicure</span><span class="service-item-price">+$25</span></li>
           </ul>
         </div>
 
+        <!-- EXTRAS & WAXING -->
         <div class="service-card">
           <div class="service-card-header">
-            <span class="label">Special Occasions</span>
-            <h3>Combos &amp; Add-Ons</h3>
-            <span class="service-price">From $65</span>
+            <span class="label">Add-Ons &amp; More</span>
+            <h3>Extras &amp; Waxing</h3>
+            <span class="service-price">From $5</span>
           </div>
           <ul class="service-items">
-            <li class="service-item"><span class="service-item-name">Mani + Pedi Combo <span class="popular-badge">Popular</span></span><span class="service-item-price">$65</span></li>
-            <li class="service-item"><span class="service-item-name">Gel Mani + Deluxe Pedi</span><span class="service-item-price">$85</span></li>
-            <li class="service-item"><span class="service-item-name">Soak Off (existing gel)</span><span class="service-item-price">$10</span></li>
-            <li class="service-item"><span class="service-item-name">Kids Manicure (under 12)</span><span class="service-item-price">$18</span></li>
-            <li class="service-item"><span class="service-item-name">Group Booking (4+)</span><span class="service-item-price">Call us</span></li>
-            <li class="service-item"><span class="service-item-name">Custom Nail Art / Gel-X</span><span class="service-item-price">Quoted</span></li>
+            <li class="service-item"><span class="service-item-name" style="font-weight:700;color:var(--sage);">— Kids (10 &amp; Under) —</span><span></span></li>
+            <li class="service-item"><span class="service-item-name">Kids Manicure (reg polish)</span><span class="service-item-price">$15</span></li>
+            <li class="service-item"><span class="service-item-name">Kids Gel Manicure</span><span class="service-item-price">$30</span></li>
+            <li class="service-item"><span class="service-item-name">Kids Pedicure</span><span class="service-item-price">$25</span></li>
+            <li class="service-item"><span class="service-item-name" style="font-weight:700;color:var(--sage);">— Nail Extras —</span><span></span></li>
+            <li class="service-item"><span class="service-item-name">Design 2 Nails</span><span class="service-item-price">$10</span></li>
+            <li class="service-item"><span class="service-item-name">Design All Nails</span><span class="service-item-price">$35</span></li>
+            <li class="service-item"><span class="service-item-name">Chrome</span><span class="service-item-price">$15</span></li>
+            <li class="service-item"><span class="service-item-name">Shape (coffin/almond)</span><span class="service-item-price">$5+</span></li>
+            <li class="service-item"><span class="service-item-name" style="font-weight:700;color:var(--sage);">— Waxing —</span><span></span></li>
+            <li class="service-item"><span class="service-item-name">Eyebrows</span><span class="service-item-price">$14</span></li>
+            <li class="service-item"><span class="service-item-name">Upper Lip</span><span class="service-item-price">$10</span></li>
+            <li class="service-item"><span class="service-item-name">Full Face</span><span class="service-item-price">$45+</span></li>
+            <li class="service-item"><span class="service-item-name">Under Arms</span><span class="service-item-price">$20</span></li>
+            <li class="service-item"><span class="service-item-name">Bikini / Brazilian</span><span class="service-item-price">$60 / $65</span></li>
+            <li class="service-item"><span class="service-item-name">Full Legs</span><span class="service-item-price">$65+</span></li>
+            <li class="service-item"><span class="service-item-name">Back / Chest</span><span class="service-item-price">$70 / $55</span></li>
           </ul>
         </div>
+
       </div>
 
       <div class="cta-strip">
         <div>
-          <h3>Walk-ins Welcome.<br/><span style="font-size:18px;font-weight:300;color:rgba(255,255,255,0.6);">Mon–Sat 9am–7pm · Sun 10am–6pm</span></h3>
+          <h3>Walk-ins Welcome.<br/><span style="font-size:18px;font-weight:300;color:rgba(255,255,255,0.6);">Mon–Fri 9:30am–7pm · Sat 8:30am–6pm · Sun 11am–5pm</span></h3>
         </div>
         <a href="#contact" class="btn-gold">Get Directions →</a>
       </div>
@@ -632,19 +677,19 @@
       <div class="gallery-grid-2x2">
         <div class="gallery-item-real">
           <img src="nail1.jpg"  />
-          <div class="hover-label">Rosewood Matt</div>
+          <div class="hover-label">Nail Art · Gel</div>
         </div>
         <div class="gallery-item-real">
           <img src="nail2.jpg"  />
-          <div class="hover-label">Midnight Hearts Noir</div>
+          <div class="hover-label">French · Nail Art</div>
         </div>
         <div class="gallery-item-real">
-          <img src="nail3.jpg" />
-          <div class="hover-label">Classic Ruby Gloss</div>
+          <img src="nail3.jpg"  />
+          <div class="hover-label">French · Acrylic</div>
         </div>
         <div class="gallery-item-real">
-          <img src="nail4.jpg"  />
-          <div class="hover-label">Sunset Coral Square</div>
+          <img src="nail4.jpg" />
+          <div class="hover-label">Gel · Rhinestones</div>
         </div>
       </div>
 
@@ -728,8 +773,9 @@
       <div class="footer-col">
         <h4>Hours</h4>
         <div class="open-now-footer"><div class="open-dot-g"></div>Open Now</div>
-        <div class="hours-row"><span class="day">Mon–Sat</span><span>9:00am – 7:00pm</span></div>
-        <div class="hours-row"><span class="day">Sunday</span><span>10:00am – 6:00pm</span></div>
+        <div class="hours-row"><span class="day">Mon – Fri</span><span>9:30am – 7:00pm</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span>8:30am – 6:00pm</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span>11:00am – 5:00pm</span></div>
         <div style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.35);">Walk-ins welcome based on availability.</div>
       </div>
 
